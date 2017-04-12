@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=ConvertAll
+GenericName=Unit Converter
+GenericName[zh_CN]=单位转换工具
+Comment=Convert between various units
+Comment[zh_CN]=转换各种单位
+Icon=/usr/share/pixmaps/convertall/convertall.svg
+Exec=convertall
+Terminal=false
+Type=Application
+Categories=Qt;Utility;

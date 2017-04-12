@@ -1,0 +1,90 @@
+convertall (0.7.2-1) unstable; urgency=medium
+
+  * Build with QT5 libraries
+
+convertall (0.6.1-5) unstable; urgency=medium
+
+  * Add most used units of measurement in mainland China,Hong Kong,Taiwan
+
+convertall (0.6.1-3) unstable; urgency=medium
+
+  * Add Chinese translation
+
+convertall (0.6.1-2) unstable; urgency=medium
+
+  * debian/convertall.desktop: Fix icon location
+  * debian/control: Bump standards-version to 3.9.7 (no changes)
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Tue, 29 Mar 2016 06:52:18 +1100
+
+convertall (0.6.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump standards-versioon to 3.9.6. No changes
+  * Drop debian/menu, we already have a .desktop file
+  * Drop convertall.xpm, unneeded
+  * debian/watch: Use sf.net redirector
+  * debian/control: Build-dep on libqt4-dev rather than qt4-defaults
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Fri, 16 Oct 2015 06:19:34 +1100
+
+convertall (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop 01_install_python_into_usr_share.patch, fixed upstream
+  * Switch to python3
+  * Bump standards-version to 3.9.5 (no changes)
+  * Set python-apps team as maintainer, myself as uploader
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Sat, 08 Feb 2014 11:29:19 +1100
+
+convertall (0.5.2-1) unstable; urgency=low
+
+  * New upstream release. closes: #692964
+  * Set myself as Maintainer. closes: #718744
+  * debian/control:
+    - Removed "XS-Python-Version: current, >= 2.4" 
+    - Added "X-Python-Version: >= 2.3"
+    - Updated standards version to 3.9.4
+    - Added depends on ${misc:Depends} to fix issue with debhelper
+    - Delete line: XB-Python-Version: ${python:Versions}
+  * debian/rules:
+    - Convert to simple rules
+  * Created debian/patches/series
+  * Updated compat to 9
+  * Updated debian/watch
+  * Debian/convertall.desktop:
+    - Add keywords
+    - Change comment. closes: #691740
+  * Delete debian/00list
+  * debian/patches/:
+    - Move existing patches here.
+    - Change file format from .dpatch to .patch. closes: #664354
+    - Append patch numbers to each patch
+    - Refresh all patches
+  * Updated debian/copyright to machine readable format 1.0
+  * Edited debian/menu for ease of use
+  * Create debian/docs
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Mon, 05 Aug 2013 18:04:05 +1000
+
+convertall (0.4.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update my email address everywhere.
+  * Update menu icon to new upstream.
+  * debian/watch: Fix for new upstream URL. (Closes: #460000)
+  * debian/menu: Update to new menu hierarchy.
+  * debian/control:
+    - Use a proper Homepage field.
+    - Bump Standards-Version to 3.8.0.
+    - Fix short description.
+  * debian/convertall.desktop: Drop obsolete Encoding field.
+
+ -- William Grant <william@qeuni.net>  Sat, 26 Jul 2008 20:13:52 +1000
+
+convertall (0.4.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #419340)
+
+ -- William Grant <william.grant@ubuntu.org.au>  Sun, 15 Apr 2007 11:29:26 +1000

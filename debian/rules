@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+		dh $@ --with python3
+
+override_dh_install:
+	dh_install
+	python3 install.py -p /usr -b $(CURDIR)/debian/convertall -i share/pixmaps/convertall
+	rm debian/convertall/usr/share/doc/convertall/LICENSE
+	rm debian/convertall/usr/share/doc/convertall/INSTALL
